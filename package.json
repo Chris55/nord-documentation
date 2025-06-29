@@ -1,0 +1,45 @@
+{
+    "author": "Christian Florentz (christian.florentz@gmail.com)",
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "dependencies": {
+    },
+    "description": "The unofficial Nord Documentation",
+    "devDependencies": {
+        "jsdoc": "^4.0.4",
+        "jsdoc-to-markdown": "^9.1.1",
+        "markdown-magic": "^3.6.5",
+        "node-pandoc": "^0.3.0"
+    },
+    "keywords": [
+        "Nord",
+        "Stage",
+        "NS2",
+        "NS2EX",
+        "NS3",
+        "File"
+    ],
+    "private": true,
+    "license": "BSD-3-Clause",
+    "name": "nord-documentation",
+    "prettier": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Chris55/nord-documentation"
+    },
+    "scripts": {
+        "build-doc": "./build-doc.sh stage"
+    },
+    "type": "module",
+    "version": "1.7.0"
+}

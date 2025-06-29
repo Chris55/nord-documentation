@@ -10,7 +10,6 @@ We contacted Nord Keyboards / Clavia DMI AB support about this project, answer f
 >
 > @Clavia Support.
 
-* * *
 
 ### Summary
 - [Disclaimer](#disclaimer)
@@ -65,20 +64,30 @@ The names Nord and Clavia as well as related names, marks, emblems and images ar
 
 
 ## License
-This mapping is provided as-is under the MIT license.
+BSD 3-Clause License
 
-Copyright (c) 2020-2023 Christian Florentz
+Copyright (c) 2020, Christian Florentz
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+1. Redistributions of source code must retain the above copyright notice, this list of conditions
+   and the following disclaimer.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions
+   and the following disclaimer in the documentation and/or other materials provided with the distribution.
 
+3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse
+   or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS
+OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 \newpage
 ## Nord Stage 3 Program File Structure
 
@@ -473,7 +482,7 @@ O = off, 1 = on
 ## NS3 Extern Kb Zone
 Offset in file: 0xF4 (b6-3)
 
-**See**: [Organ Kb Zone](#ns3-organ-kb-zone) for detailed explanation.
+**See**: [Organ Kb Zone](#ns3-organ-kb-zone) for detailed explanation.  
 
 ## NS3 Extern Octave Shift
 Offset in file: 0xF4 (b1-0) and 0xF5 (b7)
@@ -643,7 +652,7 @@ Offset in file: 0x129 (b2)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS3 Amp Sim Eq Source
@@ -652,7 +661,7 @@ Offset in file: 0x10B (b3-2)
 ```
 0 = Organ, 1, Piano, 2 = Synth
 
-
+ 
 ```
 
 ## NS3 Amp Sim Eq Amp Type
@@ -666,7 +675,7 @@ Offset in file: 0x12A (b7-5)
 4 = LP24
 5 = HP24
 
-
+ 
 ```
 
 ## NS3 Amp Sim Eq Treble
@@ -1082,7 +1091,7 @@ else bass (fixed 100 Hz) frequency boost/cut table:
 ## NS3 Amp Sim Eq Mid Flt Freq
 Offset in file: 0x12D (b7-1)
 
-**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.
+**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.  
 ```
 7-bit value 0/127 = 200 Hz to 8.0 kHz
 
@@ -1229,7 +1238,7 @@ Morph Control Pedal:
 ## NS3 Amp Sim Eq Drive
 Offset in file: 0x130 (b0) and 0x131 (b7-2)
 
-**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.
+**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.  
 ```
 7-bit value 0/127 = 0 to 10.0
 
@@ -1249,7 +1258,7 @@ Offset in file: 0x139 (b5)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS3 Compressor Amount
@@ -1265,7 +1274,7 @@ Offset in file: 0x13A (b5)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS3 Delay On
@@ -1274,7 +1283,7 @@ Offset in file: 0x119 (b3)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS3 Delay Source
@@ -1283,7 +1292,7 @@ Offset in file: 0x119 (b2-1)
 ```
 0 = Organ, 1, Piano, 2 = Synth
 
-
+ 
 ```
 
 ## NS3 Delay Master Clock
@@ -1292,7 +1301,7 @@ Offset in file: 0x119 (b0)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS3 Delay Tempo
@@ -1588,7 +1597,7 @@ Offset in file: 0x125 (b5)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS3 Delay Filter
@@ -1601,7 +1610,7 @@ Offset in file: 0x125 (b4-3)
   3 = BP
 
 
-
+ 
 ```
 
 ## NS3 Delay Analog Mode
@@ -1610,13 +1619,13 @@ Offset in file: 0x129 (b3)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS3 Delay Feedback
 Offset in file: 0x125 (b2-0) and 0x126 (b7-4)
 
-**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.
+**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.  
 ```
 7-bit value 0/127 = 0/10
 
@@ -1633,7 +1642,7 @@ Morph Control Pedal:
 ## NS3 Delay Mix
 Offset in file: 0x121 (b4-0) and 0x122 (b7-6)
 
-**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.
+**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.  
 ```
 7-bit value 0/127 = 0/10
 
@@ -1653,7 +1662,7 @@ Offset in file: 0x10B (b4)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS3 Effect 1 Source
@@ -1662,7 +1671,7 @@ Offset in file: 0x10B (b3-2)
 ```
 0 = Organ, 1, Piano, 2 = Synth
 
-
+ 
 ```
 
 ## NS3 Effect 1 Type
@@ -1676,13 +1685,13 @@ Offset in file: 0x10B (b1-0) and 0x10C (b7)
 4 = A-WA1
 5 = A-WA2
 
-
+ 
 ```
 
 ## NS3 Effect 1 Amount
 Offset in file: 0x110 (b6-0)
 
-**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.
+**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.  
 ```
 7-bit value 0/127 = 0/10
 
@@ -1699,7 +1708,7 @@ Morph Control Pedal:
 ## NS3 Effect 1 Rate
 Offset in file: 0x10C (b5-0) and 0x10D (b7)
 
-**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.
+**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.  
 ```
 7-bit value 0/127 = 0/10
 
@@ -1850,7 +1859,7 @@ Offset in file: 0x10C (b6)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS3 Effect 2 On
@@ -1859,7 +1868,7 @@ Offset in file: 0x114 (b7)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS3 Effect 2 Source
@@ -1868,7 +1877,7 @@ Offset in file: 0x114 (b6-5)
 ```
 0 = Organ, 1, Piano, 2 = Synth
 
-
+ 
 ```
 
 ## NS3 Effect 2 Type
@@ -1886,7 +1895,7 @@ Offset in file: 0x114 (b4-2)
 ## NS3 Effect 2 Amount
 Offset in file: 0x115 (b2-0) and 0x116 (b7-4)
 
-**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.
+**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.  
 ```
 7-bit value 0/127 = 0/10
 
@@ -1913,7 +1922,7 @@ Offset in file: 0x114 (b7)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS3 Reverb Type
@@ -1931,7 +1940,7 @@ Offset in file: 0x134 (b0) and 0x135 (b7-6)
 ## NS3 Reverb Amount
 Offset in file: 0x135 (b4-0) and 0x136 (b7-6)
 
-**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.
+**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.  
 ```
 7-bit value 0/127 = 0/10
 
@@ -1951,7 +1960,7 @@ Offset in file: 0x135 (b5)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS3 Rotary Speaker On
@@ -2343,7 +2352,7 @@ O = off, 1 = on
 ## NS3 Organ Preset 2 Drawbars
 Offset in file: 0xD9
 
-**See**: [Organ Preset 1 Drawbars](#ns3-organ-drawbars-preset-1) for detailed explanation.
+**See**: [Organ Preset 1 Drawbars](#ns3-organ-drawbars-preset-1) for detailed explanation.  
 ```
 Drawbar value range is 0/8.
 For Vox Organ each value is converted to 0/1: 0 (if value < 4) else 1
@@ -2518,12 +2527,12 @@ O = off, 1 = on
 ## NS3 Piano Kb Zone
 Offset in file: 0x43 (b6-3)
 
-**See**: [Organ Kb Zone](#ns3-organ-kb-zone) for detailed explanation.
+**See**: [Organ Kb Zone](#ns3-organ-kb-zone) for detailed explanation.  
 
 ## NS3 Piano Volume
 Offset in file: 0x43 (b2-0), 0x44 (b7-4)
 
-**See**: [Organ Volume](#ns3-organ-volume) for detailed explanation.
+**See**: [Organ Volume](#ns3-organ-volume) for detailed explanation.  
 ```
 Morph Wheel:
 0x44 (b3-b0), 0x45 (b7-b4): 8-bit raw value
@@ -2666,7 +2675,7 @@ Only on Grand and Upright piano.
 ## NS3 File Version
 Offset in file: 0x14 and 0x15
 
-**See**: [Nord Stage 3 - Update History](https://www.nordkeyboards.com/products/nord-stage-3/nord-stage-3-update-history)
+**See**: [Nord Stage 3 - Update History](https://www.nordkeyboards.com/products/nord-stage-3/nord-stage-3-update-history)  
 ```
 16-bit integer value in Little Endian format, ex 304 = v3.04
 
@@ -2906,7 +2915,7 @@ Offset in file: 0xA5 (b3-2)
 ## NS3 Synth Filter LFO Amount
 Offset in file: 0xA0 (b3-0) and 0xA1 (b7-5)
 
-**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.
+**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.  
 ```
 0/127 value = 0 / 10
 
@@ -2934,7 +2943,7 @@ Input Value is not the direct midi value as usual, instead it is coded on a spec
 ## NS3 Synth Filter Freq
 Offset in file: 0x98 (b1-0) and 0x99 (b7-3)
 
-**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.
+**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.  
 ```
 0/127 value = 14 Hz / 21 kHz
   0 = 14 Hz
@@ -3351,7 +3360,7 @@ Offset in file: 0x8F (b4-1)
 ## NS3 Synth Oscillator Control
 Offset in file: 0x90 (b2-0) and 0x91 (b7-4)
 
-**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.
+**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.  
 ```
 Type                  Midi value conversion
 Pitch (1)             0/127 => 0/24
@@ -4244,7 +4253,7 @@ Offset in file: 0x86 (b2-0)
 ## NS3 Synth Lfo Rate
 Offset in file: 0x87 (b6-0)
 
-**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.
+**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.  
 ```
 0/127 value = 0.03 Hz / 523 Hz
   0 = 0.03 Hz
@@ -4535,12 +4544,12 @@ O = off, 1 = on
 ## NS3 Synth Kb Zone
 Offset in file: 0x52 (b6-3)
 
-**See**: [Organ Kb Zone](#ns3-organ-kb-zone) for detailed explanation.
+**See**: [Organ Kb Zone](#ns3-organ-kb-zone) for detailed explanation.  
 
 ## NS3 Synth Volume
 Offset in file: 0x52 (b2-0) and 0x53 (b7-4)
 
-**See**: [Organ Volume](#ns3-organ-volume) for detailed explanation.
+**See**: [Organ Volume](#ns3-organ-volume) for detailed explanation.  
 ```
 Morph Wheel:
 0x53 (b3-b0), 0x54 (b7-b4): 8-bit raw value
@@ -4569,7 +4578,7 @@ O = off, 1 = on
 ## NS3 Synth Pitch Stick Range
 Offset in file: 0x3b (b7-4)
 
-**See**: [Nord Stage 3 - Update History](https://www.nordkeyboards.com/products/nord-stage-3/nord-stage-3-update-history)
+**See**: [Nord Stage 3 - Update History](https://www.nordkeyboards.com/products/nord-stage-3/nord-stage-3-update-history)  
 ```
 Synth Pitch Shift Custom Range is available only with OS >= v2.00 (2018-12-18)
 File version v3.03 or later
@@ -4611,7 +4620,7 @@ O = off, 1 = on
 ## NS3 Synth Arp Rate
 Offset in file: 0x81 (b7-1)
 
-**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.
+**See**: [Organ Volume](#ns3-organ-volume) for detailed Morph explanation.  
 ```
 0/127 value = 16 bpm / Fast 5
   0 = 16 bpm
@@ -5310,7 +5319,7 @@ O = off, 1 = on
 ## NS2 Extern Kb Zone
 Offset in file: 0x56 (b5-3)
 
-**See**: [Organ Kb Zone](#ns2-organ-kb-zone) for detailed explanation.
+**See**: [Organ Kb Zone](#ns2-organ-kb-zone) for detailed explanation.  
 
 ## NS2 Extern Octave Shift
 Offset in file: 0x56 (b2-0) and 0x57 (b7)
@@ -5503,7 +5512,7 @@ Offset in file: 0x133 (b4)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS2 Amp Sim Eq Source
@@ -5512,7 +5521,7 @@ Offset in file: 0x133 (b3-2)
 ```
 0 = Organ, 1, Piano, 2 = Synth
 
-
+ 
 ```
 
 ## NS2 Amp Type
@@ -5525,7 +5534,7 @@ Offset in file: 0x133 (b1-0)
   3 = Twin
 
 
-
+ 
 ```
 
 ## NS2 Eq Treble
@@ -6085,7 +6094,7 @@ Offset in file: 0x3e (b4)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS2 Compressor Amount
@@ -6101,7 +6110,7 @@ Offset in file: 0x125 (b5)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS2 Delay Source
@@ -6110,7 +6119,7 @@ Offset in file: 0x125 (b4-3)
 ```
 0 = Organ, 1, Piano, 2 = Synth
 
-
+ 
 ```
 
 ## NS2 Delay Master Clock
@@ -6119,7 +6128,7 @@ Offset in file: 0x125 (b1)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS2 Delay Tempo
@@ -6310,7 +6319,7 @@ Offset in file: 0x125 (b2)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS2 Delay Feedback
@@ -6342,7 +6351,7 @@ Offset in file: 0x10f (b7-b6)
 ```
 O = Effect 1, 1 = Effect 2, 2 = Delay
 
-
+ 
 ```
 
 ## NS2 Effect 1 On
@@ -6351,7 +6360,7 @@ Offset in file: 0x10f (b5)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS2 Effect 1 Source
@@ -6360,7 +6369,7 @@ Offset in file: 0x10f (b4-3)
 ```
 0 = Organ, 1, Piano, 2 = Synth
 
-
+ 
 ```
 
 ## NS2 Effect 1 Type
@@ -6374,7 +6383,7 @@ Offset in file: 0x10f (b2-0)
 4 = A-WA1
 5 = A-WA2
 
-
+ 
 ```
 
 ## NS2 Effect 1 Amount
@@ -6446,7 +6455,7 @@ Offset in file: 0x110 (b7)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS2 Effect 2 On
@@ -6455,7 +6464,7 @@ Offset in file: 0x11a (b5)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS2 Effect 2 Source
@@ -6464,7 +6473,7 @@ Offset in file: 0x11a (b4-3)
 ```
 0 = Organ, 1, Piano, 2 = Synth
 
-
+ 
 ```
 
 ## NS2 Effect 2 Type
@@ -6478,7 +6487,7 @@ Offset in file: 0x11a (b2-0)
 4 = CHOR1
 5 = CHOR2
 
-
+ 
 ```
 
 ## NS2 Effect 2 Amount
@@ -6550,7 +6559,7 @@ Offset in file: 0x11b (b7)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS2 Reverb On
@@ -6559,7 +6568,7 @@ Offset in file: 0x3d (b7)
 ```
 O = off, 1 = on
 
-
+ 
 ```
 
 ## NS2 Reverb Type
@@ -7679,7 +7688,7 @@ Offset in file: 0xf3 (b4)
 ## NS2 Synth Filter Freq
 Offset in file: 0xef (b0) and 0xf0 (b7-2)
 
-**See**: [Organ Volume](#ns2-organ-volume) for detailed Morph explanation.
+**See**: [Organ Volume](#ns2-organ-volume) for detailed Morph explanation.  
 ```
 0/127 value = 20 Hz / 21 kHz
   0 = 20 Hz
