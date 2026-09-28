@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$1" != "stage" ] && [ "$1" != "lead" ]; then
+if [ "$1" != "stage" ] && [ "$1" != "lead" ] && [ "$1" != "electro" ]; then
     echo $1 is not supported.
     exit -1
 fi
@@ -40,6 +40,12 @@ if [ "$1" == "lead" ]; then
     echo Nord Lead A1 documentation updated, $PANDOC_OUT
 fi
 
+if [ "$1" == "electro" ]; then
+    PANDOC_OUT="./nord-mapping-electro.pdf"
+    pandoc ./ne5/header.yaml ./out/*-electro.md -s -o $PANDOC_OUT $PANDOC_OPT
+    echo Nord Electro 5 documentation updated, $PANDOC_OUT
+fi
+
 # build doc web site
 
-cat ./out/*-stage.md >./index.md
+cat ./out/*-stage.md ./out/*-electro.md >./index.md

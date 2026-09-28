@@ -13,8 +13,10 @@
 | Nord Electro 4D Backup            | ne4db      |
 | Nord Electro 4HP Backup           | ne4b       |
 | Nord Electro 5 Backup             | ne5b       |
+| Nord Electro 5 Live               | ne5l       |
 | Nord Electro 5 Program            | ne5p       |
 | Nord Electro 5 Program Bundle     | ne5pbundle |
+| Nord Electro 5 Settings           | ne5s       |
 | Nord Electro 5 Song               | ne5t       |
 | Nord Electro 5 Song Bundle        | ne5tbundle |
 | Nord Lead 4 Backup                | nl4b       |

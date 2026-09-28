@@ -78,6 +78,7 @@ const pathOutput = __dirname + "/../out/";
 const pathInputNs2 = __dirname + "/../ns2/program/";
 const pathInputNs3 = __dirname + "/../ns3/program/";
 const pathInputNla1 = __dirname + "/../nla1/program/";
+const pathInputNe5 = __dirname + "/../ne5/";
 
 // outfile files are prefixed with a number to be able to manage the right order in the final pfd file.
 // 00- is the first...
@@ -90,3 +91,11 @@ convert("ns2", pathInputNs2 + "ns2-doc.md", pathOutput + "30-doc-stage.md", true
 
 convert("nla1", pathInputNla1 + "readme.md", pathOutput + "40-readme-lead.md", false);
 convert("nla1", pathInputNla1 + "nla1-doc.md", pathOutput + "50-doc-lead.md", true);
+
+// the Electro 5 mapping is handmade, there is no jsdoc source to extract.
+convert("ne5", pathInputNe5 + "readme.md", pathOutput + "60-readme-electro.md", false);
+convert("ne5", pathInputNe5 + "program/readme.md", pathOutput + "61-program-electro.md", false);
+convert("ne5", pathInputNe5 + "live/readme.md", pathOutput + "62-live-electro.md", false);
+convert("ne5", pathInputNe5 + "song/readme.md", pathOutput + "63-song-electro.md", false);
+convert("ne5", pathInputNe5 + "settings/readme.md", pathOutput + "64-settings-electro.md", false);
+convert("ne5", pathInputNe5 + "bundle/readme.md", pathOutput + "65-bundle-electro.md", false);

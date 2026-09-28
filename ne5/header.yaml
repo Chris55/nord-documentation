@@ -1,0 +1,12 @@
+---
+title: Unofficial Nord Electro 5 File Structure Documentation
+author: John Moore
+header-includes: |
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhead[CO,CE]{Rev 1.0}
+    \fancyfoot[CO,CE]{Unofficial Nord Electro 5 File Structure Documentation}
+    \fancyfoot[LE,RO]{\thepage}
+abstract:
+---
+
